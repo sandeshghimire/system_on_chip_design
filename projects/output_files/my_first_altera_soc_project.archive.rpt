@@ -1,0 +1,114 @@
+Archive Project report for my_first_altera_soc_project
+Fri Jan 10 10:59:12 2014
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Fri Jan 10 10:59:12 2014 ;
+; Revision Name          ; my_first_altera_soc_project           ;
+; Top-level Entity Name  ; my_first_altera_soc_project           ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: Running Export Database to generate version compatible database
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Database Export
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Fri Jan 10 10:59:07 2014
+Info: Command: quartus_cdb my_first_altera_soc_project -c my_first_altera_soc_project --export_database=export_db
+Error (39003): Run Analysis and Synthesis (quartus_map) with revision "my_first_altera_soc_project" for --rev option before running Compiler Database Interface (quartus_cdb)
+Error: Quartus II 32-bit Database Export was unsuccessful. 1 error, 0 warnings
+    Error: Peak virtual memory: 313 megabytes
+    Error: Processing ended: Fri Jan 10 10:59:07 2014
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:00
+Error: Result: ERROR: Error(s) found while running an executable. See report file(s) for error message(s). Message log indicates which executable was run last.
+
+Error: Export Database failed. See report files.
+Info: File Set 'Custom' contains:
+    Info: Programming output files
+    Info: Incremental compilation and Rapid Recompile database files
+    Info: Automatically detected source files
+    Info: Report files
+    Info: Project source and settings files
+    Info: Megafunction and IP library files
+    Info: Version compatible database files
+Critical Warning: Analysis & Elaboration was not run successfully
+    Critical Warning: The 'Automatically detected source files' file subset will attempt to guess which files are needed. The archive file will likely be larger than required and may still be incomplete.
+Critical Warning: Analysis & Elaboration was not run successfully
+    Critical Warning: The 'Megafunction and IP library files' file subset will attempt to guess which files are needed. The archive file will likely be larger than required and may still be incomplete.
+Warning: Version compatible database files do not exist -- excluding 'Version compatible database files'. You need to run Export Database before you can archive 'Version compatible database files'.
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'Y:/work-sandesh/getting_started_with_fpga/projects/my_first_altera_soc_project.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'my_first_altera_soc_project.archive.rpt'
+Error (23031): Evaluation of Tcl script c:/altera/13.1/quartus/common/tcl/apps/qpm/qar.tcl unsuccessful
+Error: Quartus II 32-bit Shell was unsuccessful. 12 errors, 8 warnings
+    Error: Peak virtual memory: 302 megabytes
+    Error: Processing ended: Fri Jan 10 10:59:12 2014
+    Error: Elapsed time: 00:00:22
+    Error: Total CPU time (on all processors): 00:00:08
+
+
++------------------------------------------------------------------------+
+; Files Archived                                                         ;
++------------------------------------------------------------------------+
+; File Name                                                              ;
++------------------------------------------------------------------------+
+; arc_file_list_temp.tmp.txt                                             ;
+; C:/altera/13.1/quartus/bin/assignment_defaults.qdf                     ;
+; c:/altera/13.1/quartus/bin/assignment_defaults.qdf                     ;
+; C:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd                ;
+; C:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd                ;
+; C:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd                ;
+; C:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd                ;
+; db/my_first_altera_soc_project.cbx.xml                                 ;
+; db/my_first_altera_soc_project.db_info                                 ;
+; db/my_first_altera_soc_project.qpf                                     ;
+; incremental_db/compiled_partitions/my_first_altera_soc_project.db_info ;
+; my_first_altera_soc_project.qpf                                        ;
+; my_first_altera_soc_project.qsf                                        ;
+; my_first_altera_soc_project.vhd                                        ;
+; output_files/my_first_altera_soc_project.flow.rpt                      ;
+; output_files/my_first_altera_soc_project.map.rpt                       ;
+; output_files/my_first_altera_soc_project.map.summary                   ;
++------------------------------------------------------------------------+
+
+

@@ -1,0 +1,9 @@
+c:/altera/13.1/quartus/bin/assignment_defaults.qdf
+my_first_altera_soc_project.qpf
+my_first_altera_soc_project.qsf
+my_first_altera_soc_project.vhd
+db/my_first_altera_soc_project.db_info
+incremental_db/compiled_partitions/my_first_altera_soc_project.db_info
+output_files/my_first_altera_soc_project.flow.rpt
+output_files/my_first_altera_soc_project.map.rpt
+output_files/my_first_altera_soc_project.map.summary

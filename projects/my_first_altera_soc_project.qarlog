@@ -1,0 +1,28 @@
+Quartus II Archive log --	Y:/work-sandesh/getting_started_with_fpga/projects/my_first_altera_soc_project.qarlog
+
+Archive:	Y:/work-sandesh/getting_started_with_fpga/projects/my_first_altera_soc_project.qar
+Date:		Fri Jan 10 10:59:12 2014
+Quartus II 32-bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/altera/13.1/quartus/bin/assignment_defaults.qdf
+C:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+C:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+C:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+C:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+Y:/work-sandesh/getting_started_with_fpga/projects/arc_file_list_temp.tmp.txt
+Y:/work-sandesh/getting_started_with_fpga/projects/db/my_first_altera_soc_project.cbx.xml
+Y:/work-sandesh/getting_started_with_fpga/projects/db/my_first_altera_soc_project.db_info
+Y:/work-sandesh/getting_started_with_fpga/projects/db/my_first_altera_soc_project.qpf
+Y:/work-sandesh/getting_started_with_fpga/projects/incremental_db/compiled_partitions/my_first_altera_soc_project.db_info
+Y:/work-sandesh/getting_started_with_fpga/projects/my_first_altera_soc_project.qpf
+Y:/work-sandesh/getting_started_with_fpga/projects/my_first_altera_soc_project.qsf
+Y:/work-sandesh/getting_started_with_fpga/projects/my_first_altera_soc_project.vhd
+Y:/work-sandesh/getting_started_with_fpga/projects/output_files/my_first_altera_soc_project.flow.rpt
+Y:/work-sandesh/getting_started_with_fpga/projects/output_files/my_first_altera_soc_project.map.rpt
+Y:/work-sandesh/getting_started_with_fpga/projects/output_files/my_first_altera_soc_project.map.summary
+c:/altera/13.1/quartus/bin/assignment_defaults.qdf
+	======= Total: 17 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
