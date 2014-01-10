@@ -1,0 +1,10 @@
+I/O Assignment Analysis Status : Failed - Mon May 09 16:47:58 2011
+Quartus II 64-Bit Version : 11.0 Build 157 04/27/2011 SJ Full Version
+Revision Name : pipemult_migration
+Top-level Entity Name : pipemult
+Family : Cyclone IV E
+Device : EP4CE6F17C6
+Timing Models : Final
+Total pins : 44 / 154 ( 29 % )
+Total virtual pins : 0
+Total PLLs : 0 / 2 ( 0 % )
