@@ -1,0 +1,66 @@
+<BoardInfo pov="cpu">
+<!--On the SOCFPGA Cyclone Devleopment Kit,
+The pins are configured for eth1 on the hps
+to go to the external gigibit phy.  This alias
+make linux think it is eth0, and uboot will update
+mac-address field in device tree blob -->
+<alias name="ethernet0" value="/sopc/ethernet@0xff702000"/>
+<alias name="serial0" value="/sopc/serial@xffc02000"/>
+<alias name="serial1" value="/sopc/serial@xffc03000"/>
+<alias name="timer0" value="/sopc/timer@xffc08000"/>
+<alias name="timer1" value="/sopc/timer@xffc09000"/>
+<alias name="timer2" value="/sopc/timer@0xffd00000"/>
+<alias name="timer3" value="/sopc/timer@0xffd01000"/>
+<DTAppend name="cache-unified" type="bool" parentlabel="hps_0_L2" val="true"/>
+
+<DTAppend name="clock-frequency" type="number" parentlabel="hps_0_uart0" val="100000000"/>
+<DTAppend name="clock-frequency" type="number" parentlabel="hps_0_uart1" val="100000000"/>
+<DTAppend name="clock-frequency" type="number" parentlabel="hps_0_timer0" val="100000000"/>
+<DTAppend name="clock-frequency" type="number" parentlabel="hps_0_timer1" val="100000000"/>
+<DTAppend name="clock-frequency" type="number" parentlabel="hps_0_timer2" val="25000000"/>
+<DTAppend name="clock-frequency" type="number" parentlabel="hps_0_timer3" val="25000000"/>
+<DTAppend name="speed-mode" type="number" parentlabel="hps_0_i2c0" val="0"/>
+<DTAppend name="phy-mode" type="string" parentlabel="hps_0_gmac1" val="rgmii"/>
+<DTAppend name="phy-addr" type="hex" parentlabel="hps_0_gmac1" val="0xffffffff"/>
+<DTAppend name="status" type="string" parentlabel="hps_0_gmac0" val="disabled"/>
+<I2CBus master="hps_0_i2c0">
+	<I2CChip addr="0x28" label="lcd" name="newhaven,nhd-0216k3z-nsw-bbw"></I2CChip>
+	<I2CChip addr="0x51" label="eeprom" name="atmel,24c32"></I2CChip>
+</I2CBus>
+<DTAppend name="height" type="number" parentlabel="lcd" val="2"/>
+<DTAppend name="width" type="number" parentlabel="lcd" val="16"/>
+<DTAppend name="pagesize" type="number" parentlabel="eeprom" val="32"/>
+<DTAppend name="bus-hz" type="number" parentlabel="hps_0_sdmmc" val="12500000"/>
+<DTAppend name="#address-cells" type="number" parentlabel="hps_0_sdmmc" val="1"/>
+<DTAppend name="#size-cells" type="number" parentlabel="hps_0_sdmmc" val="0"/>
+<DTAppend name="supports-highspeed" type="bool" parentlabel="hps_0_sdmmc" val="true"/>
+<DTAppend name="broken-cd" type="bool" parentlabel="hps_0_sdmmc" val="true"/>
+<DTAppend name="slot@0" type="node" parentlabel="hps_0_sdmmc" newlabel="slot_0"/>
+<DTAppend name="reg" type="number" parentlabel="slot_0" val="0"/>
+<DTAppend name="bus-width" type="number" parentlabel="slot_0" val="4"/>
+
+<DTAppend name="master-ref-clk" type="number" parentlabel="hps_0_qspi" val="400000000"/>
+<DTAppend name="ext-decoder" type="number" parentlabel="hps_0_qspi" val="0"/>
+<DTAppend name="n25q128@0" type="node" parentlabel="hps_0_qspi" newlabel="flash0"/>
+<DTAppend name="#address-cells" type="number" parentlabel="flash0" val="1"/>
+<DTAppend name="#size-cells" type="number" parentlabel="flash0" val="1"/>
+<DTAppend name="compatible" type="string" parentlabel="flash0" val="n25q128"/>
+<DTAppend name="reg" type="number" parentlabel="flash0" val="0"/>
+<DTAppend name="spi-max-frequency" type="number" parentlabel="flash0" val="100000000"/>
+<DTAppend name="page-size" type="number" parentlabel="flash0" val="256"/>
+<DTAppend name="block-size" type="number" parentlabel="flash0" val="16"/>
+<DTAppend name="quad" type="number" parentlabel="flash0" val="1"/>
+<DTAppend name="tshsl-ns" type="number" parentlabel="flash0" val="200"/>
+<DTAppend name="tsd2d-ns" type="number" parentlabel="flash0" val="255"/>
+<DTAppend name="tchsh-ns" type="number" parentlabel="flash0" val="20"/>
+<DTAppend name="tslch-ns" type="number" parentlabel="flash0" val="20"/>
+<DTAppend name="partition@0" type="node" parentlabel="flash0" newlabel="part0"/>
+<DTAppend name="label" type="string" parentlabel="part0" val="Flash 0 Raw Data"/>
+<DTAppend name="partition@800000" type="node" parentlabel="flash0" newlabel="part1"/>
+<DTAppend name="label" type="string" parentlabel="part1" val="Flash 1 jffs2 Filesystem"/>
+
+
+<Chosen>
+        <Bootargs val="console=ttyS0,57600"></Bootargs>
+</Chosen>
+</BoardInfo>
